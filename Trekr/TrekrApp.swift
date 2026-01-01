@@ -28,6 +28,13 @@ struct TrekrApp: App {
                     Image(systemName: "star.fill")
                     Text("Locations")
                 }
+                NavigationStack {
+                    TipsView()
+                }
+                .tabItem{
+                    Image(systemName: "list.bullet")
+                    Text("Tips")
+                }
             }.environmentObject(locations)
         }
     }
